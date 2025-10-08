@@ -18,6 +18,10 @@ app.get('/contact', (req, res) => {
   res.sendFile(__dirname + '/contact.html');
 });
 
+app.get('/store', (req, res) => {
+  res.sendFile(__dirname + '/store.html');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
